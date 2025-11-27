@@ -1,0 +1,38 @@
+#hybrid {
+  visibility: hidden;
+}
+#theme-toggle {
+  visibility: hidden;
+}
+#theme-toggle + label {
+  content: '';
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  
+}
+#theme-toggle:not(:checked) + label {
+  background-color: gold;
+}
+#theme-toggle:checked + label {
+  background-color: transparent;
+  box-shadow: inset -7px -5px 1px 1px #fff;
+}
+.logo{
+  height: 50px;
+  width: 50px;
+}
+.form-control:focus{
+   box-shadow: none !important; 
+}
+.nav-link{transition: 0.5ms}
+.nav-link:hover{
+  backdrop-filter: blur(4px) saturate(0.5) !important;
+  background: rgba(0,0,0,0.08) !important;
+   border-radius: 8px;
+}
+.active{
+  color: red;
+}
